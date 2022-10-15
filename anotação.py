@@ -36,7 +36,12 @@ env = [
 
 django = [
     {
-        'criar projeto': 'django-admin startproject setup .'
+        'criar projeto' : 'django-admin startproject setup .'
+    },
+
+    {
+        #um projeto pode conter diversos apps, e asão são funcionalidades dentro de um projeto
+        'criar app' : 'django-admin startapp <nome do app>'
     },
 
 ]
