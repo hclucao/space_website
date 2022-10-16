@@ -35,13 +35,21 @@ env = [
 ]
 
 django = [
+    #criar coisas
     {
-        'criar projeto' : 'django-admin startproject setup .'
-    },
+        'criar projeto' : 'django-admin startproject setup .',
 
-    {
         #um projeto pode conter diversos apps, e asão são funcionalidades dentro de um projeto
         'criar app' : 'django-admin startapp <nome do app>'
+
+        #roda um comando para o djando achar os arquivos staticos e endereçar eles para serem usados
+        'arquivos stataticos' : 'python manage.py collectstatic'
+    },
+
+    #HTTP     URL
+    {
+        #importar o modulo que nos permite responder a uma requisição do cliente ao servidor
+        'importar response' : 'from django.http import HttpResponse' 
     },
 
 ]
